@@ -32,9 +32,7 @@ $ powder link
 
 
 ### Dependencies
-currently extended with the following plugins
-* imagemagick
-
+None
 
 ### Todo's
 None
