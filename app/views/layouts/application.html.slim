@@ -1,16 +1,16 @@
 doctype html
 html
-head
-  title WorkoutLog
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  = csrf_meta_tags
-body 
-  .navbar.navbar-default
+  head
+    title WorkoutLog
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body 
+    .navbar.navbar-default
+      .container
+        .navbar-header
+          = link_to 'Workout Log', root_path, class: 'navbar-brand'
+        ul.nav.navbar-nav.navbar-right
+          li= link_to 'New Workout', new_workout_path
     .container
-      .navbar-header
-        = link_to 'Workout Log', root_path, class: 'navbar-brand'
-      ul.nav.navbar-nav.navbar-right
-        li= link_to 'New Workout', new_workout_path
-  .container
-    = yield
+      = yield
